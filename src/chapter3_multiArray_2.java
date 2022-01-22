@@ -46,3 +46,8 @@ public static void main(String[]args) {
 	System.out.println("오렌지 평균:"+orange / fruitMarket.length);
 }
 }
+//위 코드에서 주의 깊게 볼 부분은 두번째 for문이다. 첫번째로 사용된 for문은 일주일 간의 수익을 계산하기
+//위한 반복문이며, 두번째 for문은 하루의 총 수익과 평균값을 계산하기 위한 반복문이다.
+//두번째 for문의 조건식은 fruitMarket의 크기가 아닌 fruitMarket[i]의 크기가 된다.
+//하루 동안의 과일 판매량을 구하고자 만약 fruitMarket.length의 크기로 반복문을 한다면 j가 3이되는 시점에 배열 요소에 접근할때
+//ArrayIndexOutOfboundsException 예외가 발생한다.
